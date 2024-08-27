@@ -177,14 +177,14 @@
             setTimeout(() => {
                 if (trackingInput === '782532602BQ') {
                     // Simulate tracking result
-                    const status = 'Delivered';
-                    const location = 'Location on file';
-                    const expectedDate = 'March 14th 2024, 19:14';
+                    const status = 'In-Transit';
+                    const location = 'Sorting Center';
+                    const expectedDate = 'August 28 2024 by 11:14 A.M.';
 
                     trackingResult.innerHTML = `
                         <p>Status: ${status}</p>
                         <p>Location: ${location}</p>
-                        <p>Expected Delivery Date: ${expectedDate}</p>
+                        <p>Estimated Delivery Date: ${expectedDate}</p>
                     `;
                     trackingResult.classList.remove('error');
                 } else {
